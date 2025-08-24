@@ -5,7 +5,7 @@ on:
 
 jobs:
   testJob:
-    runs-on: zaman
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
           path: test-results.txt
 
   deployJob:
-    runs-on: zaman
+    runs-on: self-hosted
     needs: testJob
     steps:
       - name: Checkout code
