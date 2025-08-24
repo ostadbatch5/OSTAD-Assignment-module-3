@@ -5,7 +5,7 @@ on:
 
 jobs:
   testJob:
-    runs-on: self-hosted
+#    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
